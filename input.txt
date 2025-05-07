@@ -1,0 +1,29 @@
+#include<iostream>
+#include<stack>
+
+using namespace std;
+
+void displayStack(stack<int> d)
+{
+  d.push(1);
+  
+  int n = d.size();
+  
+  for(int i=0;i<n;i++)
+  {
+    cout<<d.top()<<endl;
+    d.pop();
+  }
+}
+
+int main()
+{
+  stack<int> d;
+  stack<int> s;
+  
+  s.push(1);
+
+  displayStack(s);
+
+  return 0;
+}
